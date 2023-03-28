@@ -1,0 +1,15 @@
+::after, ::before {
+    box-sizing: border-box;
+    
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.small, small {
+    font-size: .875em;
+}
