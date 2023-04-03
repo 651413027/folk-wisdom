@@ -1,54 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <title>folk wisdom</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">Sidebar</span>
-        </a>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="shortcut icon" href="/img/25.png" type="image/x-icon">
+   <!-- <style>
+      body {
+        position: relative;
+      }
+    </style> -->
+  </head>
+  <header>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="45">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-              Home
-            </a>
+            <a class="nav-link"  href="#section1"><i class="bi bi-house"></i> หน้าหลัก</a>
           </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-              Dashboard
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2"><i class="fa fa-home"></i> ข้อมูลทั่วไป</a>
           </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-              Orders
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-              Customers
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">ภูมิปัญญาท้องถิ่น</a>
           </li>
         </ul>
-        <hr>
-        
       </div>
+    </nav>
+    <br>
+    <br>
+  
+    <div id="mm">
+    <div class="content section" style="max: width 100px ">
+      <img class="mySlides" src="/img/1.jpg" style="width: 650px; height: 370px;">
+      <img class="mySlides" src="/img/2.jpg" style="width: 650px; height: 370px;">
+      <img class="mySlides" src="/img/4.jpg" style="width: 650px; height: 370px;">
+      <img class="mySlides" src="/img/15.jpg" style="width: 650px; height: 370px;">
+
+    </div>
+    </div>
+    <script>
+    var myIndex = 0;
+    carousel();
     
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+    <div
+      id="section1"
+      class="container-fluid p-3  text-white text-center"
+      style="padding: 100px 20px"
+    >
+      <!-- <h1>หน้าหลัก</h1> -->
+     
+      <!-- <img src="/img/4.jpg" class="img-fluid" >  -->
+    </class=>
+    <div class="offcanvas offcanvas-start " id="demo" >
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title text-dark">ภูมิปัญญาท้องถิ่น</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body text-dark ">
+        <p>หมอชาวบ้าน</p>
+        <p>ตุงล้านนา </p>
+        <p>เครื่องจักสาน</p>
+        <p>ฟ้อนเล็บ</p>
+        <!-- <button class="btn btn-secondary" type="button">A Button</button> -->
+      </div>
+    </div>
+    
+    <div class="container-fluid mt-3 column-gap-lg-4">
+      <h3>ภูมิปัญญาท้องถิ่น</h3>
+      <p>ทุกสิ่งทุกอย่างที่ชาวบ้าน คิดค้นขึ้น แล้วนามาปรับปรุงแก้ไขพัฒนาแก้ปัญหา เป็นทั้ง สติปัญญาและองค์ความรู้ทั้งหมดของชาวบ้าน ดังนั้น จึงมีความครอบคลุมเนื้อหาสาระและแนวทางดำเนินชีวิตในวงกว้าง</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        Open  Sidebar folk wisdom
+      </button>
+    </div>
+  </body>
+</header>
+<body>
+  
+  
+  
+   <section>
+    <div
+      id="section2"
+      class="container-fluid "
+      style="padding: 100px 20px"
+    >
+    <h1>ข้อมูลทั่วไป</h1>
+    <br>
+  <br>
+    <div class="row py-6">
+    <div class="col-lg-5">
+   <img src="img/3.jpg" alt="" style="width: 600px; height: 400px;"> 
+  </div>
+  
+   <div class="col-lg-7">
+    <h3 style="text-indent: 5em;">ภูมิปัญญาท้องถิ่น (Local Wisdom) หรือภูมิปัญญาชาวบ้าน (Popular Wisdom) </h3>
+   
+    <p style="text-indent: 5em; font-size: 18px;">
+     ความรู้ของชาวบ้านซึ่งได้มาจากประสบการณ์ และความเฉลียวฉลาดของชาวบ้าน รวมทั้งความรู้ที่สั่งสมมาแต่บรรพบุรุษ สืบทอดจากคนรุ่นหนึ่งไปสู่คนอีกรุ่นหนึ่ง ระหว่างการสืบทอดมีการปรับ ประยุกต์และเปลี่ยนแปลง จนอาจเกิดเป็นความรู้ใหม่ตามสภาพการณ์ทางสังคมวัฒนธรรม และสิ่งแวดล้อม
+   </p>
+   <p style="text-indent: 5em; font-size: 18px;">ภูมิปัญญาเป็นความรู้ที่ประกอบไปด้วยคุณธรรมซึ่งสอดคล้องกับวิถีชีวิตดั้งเดิมของชาวบ้านในวิถีดั้งเดิมนั้น ชีวิตของชาวบ้านไม่ได้แบ่งแยกเป็นส่วนๆ หากแต่ทุกอย่างมีความสัมพันธ์กันการทำมาหากิน การอยู่ร่วมกันในชุมชน การปฏิบัติศาสนา พิธีกรรมและประเพณี (สารานุกรมไทยสำหรับเยาวชนฯ เล่ม 19, 2540)</p>
+   </div>
+   </div>
+   <br>
+   <div class="row py-6">
+    <div class="col-lg-5">
+      <h4 style="text-indent: 0.5em;">
+   ภูมิปัญญาชาวบ้านแบ่งเป็นประเภทต่าง ๆ ได้ดังนี้
+  </h4>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   1.ภูมิปัญญาชาวบ้านด้านการทำมาหากินวิถีชีวิตของชาวบ้านในอดีตเรียบง่ายกว่าทุกวันนี้
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   2.ภูมิปัญญาอันเนื่องมาจากสภาวะธรรมชาติธรรมชาติและแรงงานเป็นหลักในการทำมาหากิน และใช้สติปัญญาที่บรรพบุรุษถ่ายทอดมาให้เพื่อจะได้อยู่รอด เช่น การขยายที่ทำกิน ต้องหักร้างถางพง บุกเบิก พื้นที่ทำกินใหม่ การปรับพื้นที่ปั้นคันนาเพื่อทำนา การทำไร่ทำนา ปลูกพืชเลี้ยงสัตว์และดูแลรักษาให้เติบโตและได้ผล การจัดการแหล่งน้ำเพื่อการเกษตรก็เป็นหนึ่งในภูมิปัญญาชาบ้านในอดีตเช่นกัน
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   3.ภูมิปัญญาชาวบ้านด้านการรักษาโรคและแก้ปัญหาสุขภาพเช่น การใช้สมุนไพรเป็นยาและอาหาร พืชสมุนไพร หมอพื้นบ้าน และการแพทย์แผนโบราณ
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   4.ภูมิปัญญาชาวบ้านด้านการกินอยู่เช่นการถนอมอาหาร การปรุงอาหาร การกินอาหาร
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   5.ภูมิปัญญาชาวบ้านด้านศิลปกรรมปรากฏในผลงานสร้างสรรค์ด้านจิตรกรรม ประติมากรรม สถาปัตยกรรม และนาฏกรรม
+  </p>
+    </div>
+    <div class="col-lg-6">
+      <img src="img/18.jpg" alt="" style="width: 800px; height: 500px;"> 
+     </div>
+  </div>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   6.ภูมิปัญญาชาวบ้านด้านภาษาและวรรณกรรมปรากฏในผลงานสร้างสรรค์ด้านภาษาและสำนวนไทย เช่น คำผญา คำสอน ความเชื่อ ปริศนาคำทาย และ บทเพลงพื้นบ้าน เช่น เพลงแหล่ เพลงกล่อมเด็ก เพลงฉ่อย กลอนลำ เพลงอีแซว เพลงเกี่ยวข้าว ฯลฯ
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   7.ภูมิปัญญาชาวบ้านด้านศาสนา ขนบธรรมเนียมประเพณีใช้ในการปรับประยุกต์พิธีกรรมทางศาสนาเพื่อความมั่นคงของชุมชน ประเพณีเกี่ยวกับชีวิต ตั้งแต่เกิดจนตาย เช่น ประเพณีการเกิด การบวช การแต่งงาน การตาย ฯลฯ
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   8.ภูมิปัญญาชาวบ้านด้านการจัดการทรัพยากรธรรมชาติและสิ่งแวดล้อมใช้ในการจัดการทรัพยากรดิน น้ำ และป่าไม้ เช่น การสร้างเขื่อน เหมือง ฝาย การควบคุมคุณภาพน้ำ การป้องกัน น้ำท่วม การจัดการป่าไม้ เช่น การปลูกสวนป่า และการอนุรักษ์ป่า
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   9.ภูมิปัญญาชาวบ้านด้านการอยู่ร่วมกันในสังคมการอยู่ร่วมกันในชุมชนดั้งเดิมนั้น ส่วนใหญ่จะเป็นญาติพี่น้องไม่กี่ตระกูล ซึ่งได้อพยพย้ายถิ่นฐานมาอยู่ หรือสืบทอดบรรพบุรุษจนนับญาติกันได้ทั้งชุมชน มีคนเฒ่าคนแก่ที่ชาวบ้านเคารพนับถือเป็นผู้นำหน้าที่ของผู้นำไม่ใช่ การสั่ง แต่เป็นผู้ให้คำแนะนำปรึกษา มีความแม่นยำในกฎระเบียบประเพณีการดำเนินชีวิต ตัดสินไกล่เกลี่ยหากเกิดความขัดแย้ง ช่วยกันแก้ไขปัญหาต่างๆ ที่เกิดขึ้น
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   ปัญหาในชุมชนก็มีไม่น้อย ปัญหาการทำมาหากิน ฝนแล้ง น้ำท่วม โรคระบาด โจรลักวัวควาย เป็นต้น นอกจากนั้น ยังมีปัญหาความขัดแย้งภายในชุมชนหรือระหว่างชุมชน การละเมิดกฎหมายประเพณี ส่วนใหญ่จะเป็นการ"ผิดผี"คือ ผีของบรรพบุรุษ ผู้ซึ่งได้สร้างกฎเกณฑ์ต่างๆ ไว้ เช่น กรณีที่ชายหนุ่มถูกเนื้อต้องตัวหญิงสาวที่ยังไม่แต่งงาน เป็นต้น หากเกิดการผิดผีขึ้นมา ก็ต้องมีพิธีกรรมขอขมา โดยมีคนเฒ่าคนแก่เป็นตัวแทนของบรรพบุรุษ มีการว่ากล่าวสั่งสอนและชดเชยการทำผิดนั้นตามกฎเกณฑ์ที่วางไว้
+  </p>
+  <p style="text-indent: 2.5em; font-size: 18px;">
+   ชาวบ้านอยู่อย่างพึ่งพาอาศัยกัน ยามเจ็บไข้ได้ป่วย ยามเกิดอุบัติเหตุเภทภัย ยามที่โจรขโมยวัวควายข้าวของ การช่วยเหลือกันทำงานที่เรียกกันว่า การลงแขก ทั้งแรงกายแรงใจที่มีอยู่ก็จะแบ่งปันช่วยเหลือ เอื้ออาทรกัน การ แลกเปลี่ยนสิ่งของ อาหารการกิน และอื่นๆ จึงเกี่ยวข้องกับวิถีของชุมชน ชาวบ้านช่วยกันเก็บเกี่ยวข้าว สร้างบ้าน หรืองานอื่นที่ต้องการคนมากๆ เพื่อจะได้เสร็จโดยเร็ว ไม่มีการจ้าง (คลังปัญญาไทย, 2550)
+  </p>
+ 
+<hr>
+ <div class="row py-6">
+  <div class="col-lg-6">
+    <img src="img/22.jpg" alt="" style="width: 550px; height: 350px; "> 
+  </div>
+  <div class="col-lg-6">
+    <img src="img/20.jpg" alt="" style="width: 550px; height: 350px;"> 
+  </div>
+</div>
+</div>
+   </section>
+   
+    <footer>
+    <div
+      id="section3"
+      class="container-fluid  "
+      style="padding: 100px 20px"
+    >
+      <h1>ภูมิปัญญาท้องถิ่น</h1>
+      <br>
+      <br>
+      <div class="row py-6">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0" style="text-indent: 0.3em; font-size: 25px;">หมอไสย,หมอเป่า,หมอชาวบ้าน</h3>
+            <br>
+            <p class="mb-auto " style="text-indent: 1em; font-size: 18px;">  หมอเป่าเป็นภูมิปัญญาการแพทย์พื้นบ้านที่รักษาโรคด้วยการเป่าคาถา ซึ่งสืบทอดความรู้มาจากบรรพบุรุษ และโรคที่เชื่อว่าสามารถรักษาได้ ส่วนใหญ่เป็นโรคผิวหนัง ได้แก่ แผลสัตว์กัด แผลไฟไหม้น้ำร้อนลวก แผลเริม/งูสวัด</p>
+            <a href="https://themomentum.co/traditional-healer-saliva-and-infection/" class="stretched-link">SEE MORE</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+           <img src="/img/15.jpg" style="width: 450px; height: 350px; " >
+            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+          </div>
+        </div>
+      </div>   
+      
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0" style="text-indent: 0.3em; font-size: 25px;">เครื่องจักสาน </h3>
+            <p class="mb-auto" style="text-indent: 1em; font-size: 18px;">  เครื่องใช้ที่ทำด้วยไม้ไผ่หรือหวาย จากฝีมือความคิด ภูมิปัญญาของชาวบ้านมีลักษณะรูปทรงแตกต่างกันไปตามแต่ละท้องถิ่นทั้งนี้ขึ้นอยู่กับภูมิประเทศ วัสดุอุปกรณ์คตินิยม และอาชีพของคนในท้องถิ่นนั้นๆ
+              คำว่า “ จักสาน” คำว่า จัก คือ การทำให้เป็นแฉก เป็นหยักๆ ด้วยฟันเลื่อย หรืออีกวิธีการหนึ่ง การที่ชาวบ้านใช้คมมีดผ่าไม้ไผ่แล้วทำให้เป็นเส้นบางๆ วิธีการอย่างนี้ก็เรียกว่า จัก เช่นกัน ส่วนไม้ไผ่ หรือ หวาย ที่จักออกมาเป็นเส้นบางๆ นั้นเรียกว่า ตอก ถึงตอนนี้การที่ชาวบ้านนำตอกมาขัดกันจนเกิดลวดลายที่ต้องการ เราเรียกว่า สาน ต่อจากนั้นแล้วก็จะเป็นการสร้างสรรค์ให้เกิดรูปทรงต่างๆ จนท้ายที่สุดเป็นภาชนะสามารถนำไปใช้สอยได้ตามต้องการ
+              </p>
+            <a href="https://www.vogue.co.th/lifestyle/article/carftmanshipinthenorthofthailand" class="stretched-link">SEE MORE</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="img/17.jpg " style="width: 400px; height: 300px; "  >
+          </div>
+        </div>
+      </div>      
+      </div>
+      <hr>
+      <div class="row py-6">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0" style="text-indent: 0.3em; font-size: 25px;">ตุงล้านนา </h3>
+            <br>
+            <p class="mb-auto " style="text-indent: 1em; font-size: 18px;">  ตุง เป็นภาษาถิ่นประจำภาคเหนือ แปลว่าธงที่ใช้สำหรับแขวนแบบหนึ่งในศิลปะล้านนา สามารถพบเห็นได้ในภาคเหนือของประเทศไทย โดยคนทางภาคเหนือ จะนำตุงมาใช้เป็นเครื่องประดับ หรือประกอบพิธีกรรมต่างๆ ทั้งทางศาสนา ประเพณี งานเทศกาล หรืองานเฉลิมฉลองต่างๆ วัตถุที่นำมาทำตุงในล้านนามีหลากหลายรูปแบบ ลักษณะที่แผ่นวัตถุทำจากผ้า กระดาษ ไม้ โลหะ ทองเหลือง หรือใบลาน โดยนำไม้ส่วนปลายแขวนห้อยเป็นแผ่นยาวลงมา ตามคติความเชื่อของคนล้านนาเกี่ยวกับตุงที่ทำขึ้นเพื่อถวายเป็นพุทธบูชา ใช้ในงานพิธีทางศาสนา ทั้งในงานมงคลและอวมงคล โดยมีขนาดรูปทรงและรายละเอียดแตกต่างกันไปบ้าง ตามความเชื่อพิธีกรรม ความนิยมของแต่ละท้องถิ่น อย่างไรก็ดีคนล้านนามีความเชื่อว่า การถวายหรือทานตุงนั้นจะได้รับผลบุญและอานิสงค์ เพื่อให้เกิดความร่มเย็นเป็นสุขเป็นอย่างมาก หรือบางตำรามีความเชื่อสืบต่อกันมาว่า เมื่อตายไปจะได้ขึ้นสวรรค์หรือเมื่อตกนรกชายตุงจะแกว่งฉุดวิญญาณขึ้นมาจากนรกให้ขึ้นไปสู่สรวงสวรรค์</p>
+            <a href="https://www.finearts.go.th/chiangmailibrary/view/26813-%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89---%E0%B8%A7%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B9%89%E0%B8%B3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87-%E0%B8%95%E0%B8%B8%E0%B8%87%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%B2" class="stretched-link">SEE MORE</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+           <img src="/img/24.jpg" style="width: 800px; height: 600px; "  >
+          </div>
+        </div>
+      </div>      
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0" style="text-indent: 0.3em; font-size: 25px;"> ฟ้อนเล็บ  </h3>
+            <br>
+            <p class="mb-auto " style="text-indent: 1em; font-size: 18px;">  
+              ฟ้อนเล็บ เป็นการฟ้อนของชาวไทยภาคเหนือ การแสดงจะมีดนตรีบรรเลงประกอบ จะมีเนื้อร้องหรือไม่มีเนื้อร้องก็ได้ โอกาสที่แสดง ในงานเทศกาลหรืองานนักขัตฤกษ์ต่าง ๆ
+              ผู้แสดง  ฟ้อนแต่ละชุดจะใช้จำนวนคนแตกต่างกันไป นิยมกันมี ๔ คู่ ๖ คู่ หรือ ๘ คู่
+              การแต่งกาย  จะแต่งกายแบบไทยชาวภาคเหนือสมัยโบราณ คือ เกล้าผมทัดดอกไม้และอุบะ นุ่งผ้าตามแบบชาวเหนือ สวมเสื้อทรงกระบอกแขนยาว คอกลม ห่มสไบเฉียง นุ่งผ้าซิ่นลายขวาง และสวมเล็บมือยาวทั้ง ๘ นิ้ว เว้นแต่นิ้วหัวแม่มือ
+      
+              การแสดง  ผู้แสดงจะร่ายรำตามทำนองเพลงที่เชื่องช้า ส่วนการใช้ท่าฟ้อนเล็บนั้น ช่างฟ้อนมักจะจำต่อๆ กันมา เป็นท่าฟ้อนดั้งเดิมของชาวเหนือ คือ
+              ๑.  ท่าพายเรือ
+              ๒.  ท่าบิดบัวบาน
+              ๓.  ท่าหย่อน
+      
+              ต่อมาเมื่อนาฎศิลป์ทางภาคกลางแพร่มาสู่ภาคเหนือ การฟ้อนเล็บก็มีการปรับวิธีการฟ้อนให้เข้ากับท่ารำแม่บท เพิ่มท่ารำให้มากขึ้นและแตกต่างกันไป
+      
+              ดนตรี  เครื่องดนตรีที่ใช้ในการฟ้อนเป็นขบวนกลองยาว ซึ่งเป็นดนตรีของชาวภาคเหนือ ได้แก่ กลองแอร์ กลองตะโล้ดโป๊ด ฉาบ ฆ้องโหม่งใหญ่ ฆ้องโหม่งเล็ก ฉิ่ง ปี่ เวลาดนตรีบรรเลง เสียงปี่ดังไพเราะเยือกเย็นมาก ท่วงทำนองเชื่องช้า เสียงกลองจะตีดัง ตะ ตึ่ง นง ตึ่ง ต๊ก ถ่ง อย่างนี้เรื่อยไป ส่วนช่างฟ้อนก็จะฟ้อนช้าๆ ไปตามลีลาของเพลง
+      
+            </p>
+            <a href="http://www.banramthai.com/html/fon_leb.html" class="stretched-link">SEE MORE</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+           <img src="/img/4.jpg" style="width: 800px; height: 500px; "  >
+          </div>
+        </div>
+      </div>    
+     </div>
+     <hr>
+    </div>
+  </footer>
 </body>
 </html>

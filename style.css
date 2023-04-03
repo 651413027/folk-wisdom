@@ -1,15 +1,76 @@
-::after, ::before {
-    box-sizing: border-box;
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      /* .backgroundimg{
+        background-image: url('/img/2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 888;
+  } */
+
+  header {
+    background-image: url('/img/8.jpg') ;
+    width: 100%;
+    height: 100vh;
+    top right no-repeat;
+    background-size: cover;
+    position: relative;
+    font-size: 1.5rem;
+    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #c19090;
     
+  }
+
+  .mySlides {display:none;}
+
+  /* #mm{
+    border: 1px solid grey;
+    height: 250px;
+    width: 500px;
+    display: table-cell;
+    vertical-align: middle;
+  } */
+  /* #mm{
+    position: fixed;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    display: table-cell; 
+    vertical-align: middle;
+    margin: auto auto;
+} */
+
+#mm{
+  display: flex;
+  justify-content: center;
 }
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+
+h1 {
+  text-align: center;
 }
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
+
+section{
+  background: rgb(198,240,190);
+background: radial-gradient(circle, rgba(198,240,190,1) 0%, rgba(205,241,223,1) 12%, rgba(199,228,236,1) 21%, rgba(199,234,217,1) 31%, rgba(216,231,204,1) 46%, rgba(202,221,181,1) 64%, rgba(172,219,194,1) 76%, rgba(146,216,213,1) 86%, rgba(153,231,175,1) 100%);
 }
-.small, small {
-    font-size: .875em;
+ footer{
+  background: rgb(250,230,197);
+background: radial-gradient(circle, rgba(250,230,197,1) 0%, rgba(255,239,205,1) 8%, rgba(232,236,209,1) 40%, rgba(232,255,227,1) 59%, rgba(198,251,232,1) 100%);
+ }
+  
+ body {
+  position: relative;
 }
